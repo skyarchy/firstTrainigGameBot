@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: gameBot
+  datasource:
+    url: jdbc:h2:file:~/gameBot/botdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  h2:
+    console:
+      settings:
+        web-allow-others: true
+      enabled: true
+      path: /h2
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+
+
+scheduler:
+  info:
+    cron: "0 */1 * * * *"
+    work: true
+
+
+
+
+bot:
+  token: 1333279631:AAFglR6RC1c1GN-8tigWxBF753nYq_2nYos
+  name: ne_training_bot
+
+
+server:
+  port: 8388
