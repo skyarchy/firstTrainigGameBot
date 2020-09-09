@@ -31,7 +31,7 @@ public class FirstGameBotApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
         ApiContextInitializer.init();
-        SpringApplication.run(SpringTimeBot.class, args);
+        SpringApplication.run(FirstGameBotApplication.class, args);
 
     }
 }
