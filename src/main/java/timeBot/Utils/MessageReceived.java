@@ -10,7 +10,8 @@ import timeBot.messages.SimpleAnswers;
 @AllArgsConstructor
 public class MessageReceived {
 
-    private final SimpleAnswers simpleAnswers;
+    private final SpringConflictsRetran ret;
+
 
 
     public void updatedMessage(Update update) {
@@ -30,7 +31,11 @@ public class MessageReceived {
                 String msgText = msg.getText().toLowerCase();
 
                 if (msg.getText().contains("/hello")){
-                    simpleAnswers.hiAnswer(msg);
+                    ret.hiAnswer(msg);
+                }
+
+                if (msg.getText().contains("/buttons")){
+                    ret.buttonAnswer(msg);
                 }
                 //do code main message
             }

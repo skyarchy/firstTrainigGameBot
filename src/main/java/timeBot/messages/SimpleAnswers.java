@@ -11,6 +11,7 @@ public class SimpleAnswers {
 
     private final BotService bot;
 
+    // класс простых ответов бота
 
     public void hiAnswer(Message msg){
         // простой пример ответа без кнопок
