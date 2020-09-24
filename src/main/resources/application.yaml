@@ -23,6 +23,9 @@ scheduler:
     cron: "0 */1 * * * *"
     work: true
 
+test:
+  properties:
+    dod: true
 
 
 

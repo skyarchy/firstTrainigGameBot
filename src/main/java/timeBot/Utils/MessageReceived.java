@@ -30,6 +30,10 @@ public class MessageReceived {
                 // делаем все входящие сообщения строчными буквами
                 String msgText = msg.getText().toLowerCase();
 
+                if (msgText.contains("/test")){
+                    ret.testAnswer(msg);
+                }
+
                 if (msgText.contains("/hello")){
                     ret.hiAnswer(msg);
                 }

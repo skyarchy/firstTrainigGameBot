@@ -17,7 +17,7 @@ public class ComplexAnswers {
     private final BotService bot;
     private final CreateButtonsInline createButtons;
 
-
+// пример ответа посложнее добавление кнопочек
     public void buttonAnswer(Message msg){
         List<String> buttonNames = new ArrayList<>();
         List<String> buttonAnswers = new ArrayList<>();

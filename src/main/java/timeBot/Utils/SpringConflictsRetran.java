@@ -22,6 +22,10 @@ public class SpringConflictsRetran {
         simpleAnswers.hiAnswer(msg);
     }
 
+    public void testAnswer(Message msg){
+        simpleAnswers.testAnswer(msg);
+    }
+
     public void buttonAnswer(Message msg) {
         complexAnswers.buttonAnswer(msg);
     }
